@@ -1,0 +1,710 @@
+.Islands {
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.Islands__Container {
+  height: 100%;
+  max-width: 1264px;
+  min-height: 630px;
+  width: 90%;
+  margin: auto;
+  background: #191919;
+}
+.Islands__Container,
+.Islands__Side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.Islands__Side {
+  width: 40%;
+}
+.Islands__SideContainer {
+  width: 410px;
+  height: 380px;
+  position: relative;
+}
+.Islands__Image {
+  z-index: 10;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-animation-name: move-island;
+  animation-name: move-island;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.27, 0.01, 0.65, 1.01);
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.65, 1.01);
+}
+.Islands__Image,
+.Islands__Shadow {
+  position: absolute;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.Islands__Shadow {
+  z-index: 0;
+  -webkit-animation-name: move-shadow;
+  animation-name: move-shadow;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.27, 0.01, 0.65, 1.01);
+  animation-timing-function: cubic-bezier(0.27, 0.01, 0.65, 1.01);
+}
+.Islands__Left .Islands__Image--01 {
+  top: 0;
+  left: 120px;
+}
+.Islands__Left .Islands__Image--02 {
+  top: 140px;
+  left: 0;
+}
+.Islands__Left .Islands__Image--03 {
+  top: 110px;
+  left: 105px;
+}
+.Islands__Left .Islands__Image--04 {
+  top: 100px;
+  right: -10px;
+}
+.Islands__Left .Islands__Image--05 {
+  top: 220px;
+  right: 60px;
+}
+.Islands__Left .Islands__Image--06 {
+  bottom: 45px;
+  right: 180px;
+}
+.Islands__Left .Islands__Shadow--01 {
+  top: 120px;
+  left: 130px;
+}
+.Islands__Left .Islands__Shadow--02 {
+  top: 200px;
+  left: 0;
+}
+.Islands__Left .Islands__Shadow--03 {
+  top: 210px;
+  left: 95px;
+}
+.Islands__Left .Islands__Shadow--04 {
+  top: 240px;
+  right: -20px;
+}
+.Islands__Left .Islands__Shadow--05 {
+  top: 285px;
+  right: 50px;
+}
+.Islands__Left .Islands__Shadow--06 {
+  bottom: -20px;
+  right: 170px;
+}
+.Islands__Right .Islands__Image--01 {
+  top: 0;
+  left: 120px;
+}
+.Islands__Right .Islands__Image--02 {
+  top: 100px;
+  left: 10px;
+}
+.Islands__Right .Islands__Image--03 {
+  top: 140px;
+  left: 75px;
+}
+.Islands__Right .Islands__Image--04 {
+  top: 200px;
+  right: 10px;
+}
+.Islands__Right .Islands__Image--05 {
+  top: 150px;
+  right: 60px;
+}
+.Islands__Right .Islands__Image--06 {
+  bottom: 30px;
+  right: 190px;
+}
+.Islands__Right .Islands__Shadow--01 {
+  top: 160px;
+  left: 130px;
+}
+.Islands__Right .Islands__Shadow--02 {
+  top: 240px;
+  left: 0;
+}
+.Islands__Right .Islands__Shadow--03 {
+  top: 210px;
+  left: 60px;
+}
+.Islands__Right .Islands__Shadow--04 {
+  top: 270px;
+  right: 10px;
+}
+.Islands__Right .Islands__Shadow--05 {
+  top: 310px;
+  right: 80px;
+}
+.Islands__Right .Islands__Shadow--06 {
+  bottom: -40px;
+  right: 190px;
+}
+.Islands__Image--01,
+.Islands__Shadow--01 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.Islands__Image--02,
+.Islands__Shadow--02 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.Islands__Image--03,
+.Islands__Shadow--03 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.Islands__Image--04,
+.Islands__Shadow--04 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.Islands__Image--05,
+.Islands__Shadow--05 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.Islands__Image--06,
+.Islands__Shadow--06 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.Islands__Image--07,
+.Islands__Shadow--07 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.Islands__Image--08,
+.Islands__Shadow--08 {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.Islands__Image--09,
+.Islands__Shadow--09 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.Islands__Image--010,
+.Islands__Shadow--010 {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+.Islands__Image--011,
+.Islands__Shadow--011 {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.Islands__Image--012,
+.Islands__Shadow--012 {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+.Islands__Image--013,
+.Islands__Shadow--013 {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+.Islands__Image--014,
+.Islands__Shadow--014 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.Islands__Image--015,
+.Islands__Shadow--015 {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+.Islands__Image--016,
+.Islands__Shadow--016 {
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+.Islands__Image--017,
+.Islands__Shadow--017 {
+  -webkit-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+.Islands__Image--018,
+.Islands__Shadow--018 {
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+.Islands__Image--019,
+.Islands__Shadow--019 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.Islands__Image--020,
+.Islands__Shadow--020 {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+}
+.Islands__Image--021,
+.Islands__Shadow--021 {
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s;
+}
+.Islands__Image--022,
+.Islands__Shadow--022 {
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s;
+}
+.Islands__Image--023,
+.Islands__Shadow--023 {
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s;
+}
+.Islands__Image--024,
+.Islands__Shadow--024 {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.Islands__Image--025,
+.Islands__Shadow--025 {
+  -webkit-animation-delay: 5.2s;
+  animation-delay: 5.2s;
+}
+.Islands__Image--026,
+.Islands__Shadow--026 {
+  -webkit-animation-delay: 5.4s;
+  animation-delay: 5.4s;
+}
+.Islands__Image--027,
+.Islands__Shadow--027 {
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s;
+}
+.Islands__Image--028,
+.Islands__Shadow--028 {
+  -webkit-animation-delay: 5.8s;
+  animation-delay: 5.8s;
+}
+.Islands__Image--029,
+.Islands__Shadow--029 {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.Islands__Image--030,
+.Islands__Shadow--030 {
+  -webkit-animation-delay: 6.2s;
+  animation-delay: 6.2s;
+}
+.Islands__Image--031,
+.Islands__Shadow--031 {
+  -webkit-animation-delay: 6.4s;
+  animation-delay: 6.4s;
+}
+.Islands__Image--032,
+.Islands__Shadow--032 {
+  -webkit-animation-delay: 6.6s;
+  animation-delay: 6.6s;
+}
+.Islands__Image--033,
+.Islands__Shadow--033 {
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
+}
+.Islands__Image--034,
+.Islands__Shadow--034 {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+.Islands__Image--035,
+.Islands__Shadow--035 {
+  -webkit-animation-delay: 7.2s;
+  animation-delay: 7.2s;
+}
+.Islands__Image--036,
+.Islands__Shadow--036 {
+  -webkit-animation-delay: 7.4s;
+  animation-delay: 7.4s;
+}
+.Islands__Image--037,
+.Islands__Shadow--037 {
+  -webkit-animation-delay: 7.6s;
+  animation-delay: 7.6s;
+}
+.Islands__Image--038,
+.Islands__Shadow--038 {
+  -webkit-animation-delay: 7.8s;
+  animation-delay: 7.8s;
+}
+.Islands__Image--039,
+.Islands__Shadow--039 {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+.Islands__Image--040,
+.Islands__Shadow--040 {
+  -webkit-animation-delay: 8.2s;
+  animation-delay: 8.2s;
+}
+.Islands__Image--041,
+.Islands__Shadow--041 {
+  -webkit-animation-delay: 8.4s;
+  animation-delay: 8.4s;
+}
+.Islands__Image--042,
+.Islands__Shadow--042 {
+  -webkit-animation-delay: 8.6s;
+  animation-delay: 8.6s;
+}
+.Islands__Image--043,
+.Islands__Shadow--043 {
+  -webkit-animation-delay: 8.8s;
+  animation-delay: 8.8s;
+}
+.Islands__Image--044,
+.Islands__Shadow--044 {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.Islands__Image--045,
+.Islands__Shadow--045 {
+  -webkit-animation-delay: 9.2s;
+  animation-delay: 9.2s;
+}
+.Islands__Image--046,
+.Islands__Shadow--046 {
+  -webkit-animation-delay: 9.4s;
+  animation-delay: 9.4s;
+}
+.Islands__Image--047,
+.Islands__Shadow--047 {
+  -webkit-animation-delay: 9.6s;
+  animation-delay: 9.6s;
+}
+.Islands__Image--048,
+.Islands__Shadow--048 {
+  -webkit-animation-delay: 9.8s;
+  animation-delay: 9.8s;
+}
+.Islands__Image--049,
+.Islands__Shadow--049 {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.Islands__Image--050,
+.Islands__Shadow--050 {
+  -webkit-animation-delay: 10.2s;
+  animation-delay: 10.2s;
+}
+.Islands__Image--051,
+.Islands__Shadow--051 {
+  -webkit-animation-delay: 10.4s;
+  animation-delay: 10.4s;
+}
+.Islands__Image--052,
+.Islands__Shadow--052 {
+  -webkit-animation-delay: 10.6s;
+  animation-delay: 10.6s;
+}
+.Islands__Image--053,
+.Islands__Shadow--053 {
+  -webkit-animation-delay: 10.8s;
+  animation-delay: 10.8s;
+}
+.Islands__Image--054,
+.Islands__Shadow--054 {
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+.Islands__Image--055,
+.Islands__Shadow--055 {
+  -webkit-animation-delay: 11.2s;
+  animation-delay: 11.2s;
+}
+.Islands__Image--056,
+.Islands__Shadow--056 {
+  -webkit-animation-delay: 11.4s;
+  animation-delay: 11.4s;
+}
+.Islands__Image--057,
+.Islands__Shadow--057 {
+  -webkit-animation-delay: 11.6s;
+  animation-delay: 11.6s;
+}
+.Islands__Image--058,
+.Islands__Shadow--058 {
+  -webkit-animation-delay: 11.8s;
+  animation-delay: 11.8s;
+}
+.Islands__Image--059,
+.Islands__Shadow--059 {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.Islands__Image--060,
+.Islands__Shadow--060 {
+  -webkit-animation-delay: 12.2s;
+  animation-delay: 12.2s;
+}
+.Islands__Image--061,
+.Islands__Shadow--061 {
+  -webkit-animation-delay: 12.4s;
+  animation-delay: 12.4s;
+}
+.Islands__Image--062,
+.Islands__Shadow--062 {
+  -webkit-animation-delay: 12.6s;
+  animation-delay: 12.6s;
+}
+.Islands__Image--063,
+.Islands__Shadow--063 {
+  -webkit-animation-delay: 12.8s;
+  animation-delay: 12.8s;
+}
+.Islands__Image--064,
+.Islands__Shadow--064 {
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+.Islands__Image--065,
+.Islands__Shadow--065 {
+  -webkit-animation-delay: 13.2s;
+  animation-delay: 13.2s;
+}
+.Islands__Image--066,
+.Islands__Shadow--066 {
+  -webkit-animation-delay: 13.4s;
+  animation-delay: 13.4s;
+}
+.Islands__Image--067,
+.Islands__Shadow--067 {
+  -webkit-animation-delay: 13.6s;
+  animation-delay: 13.6s;
+}
+.Islands__Image--068,
+.Islands__Shadow--068 {
+  -webkit-animation-delay: 13.8s;
+  animation-delay: 13.8s;
+}
+.Islands__Image--069,
+.Islands__Shadow--069 {
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+.Islands__Image--070,
+.Islands__Shadow--070 {
+  -webkit-animation-delay: 14.2s;
+  animation-delay: 14.2s;
+}
+.Islands__Image--071,
+.Islands__Shadow--071 {
+  -webkit-animation-delay: 14.4s;
+  animation-delay: 14.4s;
+}
+.Islands__Image--072,
+.Islands__Shadow--072 {
+  -webkit-animation-delay: 14.6s;
+  animation-delay: 14.6s;
+}
+.Islands__Image--073,
+.Islands__Shadow--073 {
+  -webkit-animation-delay: 14.8s;
+  animation-delay: 14.8s;
+}
+.Islands__Image--074,
+.Islands__Shadow--074 {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+.Islands__Image--075,
+.Islands__Shadow--075 {
+  -webkit-animation-delay: 15.2s;
+  animation-delay: 15.2s;
+}
+.Islands__Image--076,
+.Islands__Shadow--076 {
+  -webkit-animation-delay: 15.4s;
+  animation-delay: 15.4s;
+}
+.Islands__Image--077,
+.Islands__Shadow--077 {
+  -webkit-animation-delay: 15.6s;
+  animation-delay: 15.6s;
+}
+.Islands__Image--078,
+.Islands__Shadow--078 {
+  -webkit-animation-delay: 15.8s;
+  animation-delay: 15.8s;
+}
+.Islands__Image--079,
+.Islands__Shadow--079 {
+  -webkit-animation-delay: 16s;
+  animation-delay: 16s;
+}
+.Islands__Image--080,
+.Islands__Shadow--080 {
+  -webkit-animation-delay: 16.2s;
+  animation-delay: 16.2s;
+}
+.Islands__Image--081,
+.Islands__Shadow--081 {
+  -webkit-animation-delay: 16.4s;
+  animation-delay: 16.4s;
+}
+.Islands__Image--082,
+.Islands__Shadow--082 {
+  -webkit-animation-delay: 16.6s;
+  animation-delay: 16.6s;
+}
+.Islands__Image--083,
+.Islands__Shadow--083 {
+  -webkit-animation-delay: 16.8s;
+  animation-delay: 16.8s;
+}
+.Islands__Image--084,
+.Islands__Shadow--084 {
+  -webkit-animation-delay: 17s;
+  animation-delay: 17s;
+}
+.Islands__Image--085,
+.Islands__Shadow--085 {
+  -webkit-animation-delay: 17.2s;
+  animation-delay: 17.2s;
+}
+.Islands__Image--086,
+.Islands__Shadow--086 {
+  -webkit-animation-delay: 17.4s;
+  animation-delay: 17.4s;
+}
+.Islands__Image--087,
+.Islands__Shadow--087 {
+  -webkit-animation-delay: 17.6s;
+  animation-delay: 17.6s;
+}
+.Islands__Image--088,
+.Islands__Shadow--088 {
+  -webkit-animation-delay: 17.8s;
+  animation-delay: 17.8s;
+}
+.Islands__Image--089,
+.Islands__Shadow--089 {
+  -webkit-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.Islands__Image--090,
+.Islands__Shadow--090 {
+  -webkit-animation-delay: 18.2s;
+  animation-delay: 18.2s;
+}
+.Islands__Image--091,
+.Islands__Shadow--091 {
+  -webkit-animation-delay: 18.4s;
+  animation-delay: 18.4s;
+}
+.Islands__Image--092,
+.Islands__Shadow--092 {
+  -webkit-animation-delay: 18.6s;
+  animation-delay: 18.6s;
+}
+.Islands__Image--093,
+.Islands__Shadow--093 {
+  -webkit-animation-delay: 18.8s;
+  animation-delay: 18.8s;
+}
+.Islands__Image--094,
+.Islands__Shadow--094 {
+  -webkit-animation-delay: 19s;
+  animation-delay: 19s;
+}
+.Islands__Image--095,
+.Islands__Shadow--095 {
+  -webkit-animation-delay: 19.2s;
+  animation-delay: 19.2s;
+}
+.Islands__Image--096,
+.Islands__Shadow--096 {
+  -webkit-animation-delay: 19.4s;
+  animation-delay: 19.4s;
+}
+.Islands__Image--097,
+.Islands__Shadow--097 {
+  -webkit-animation-delay: 19.6s;
+  animation-delay: 19.6s;
+}
+.Islands__Image--098,
+.Islands__Shadow--098 {
+  -webkit-animation-delay: 19.8s;
+  animation-delay: 19.8s;
+}
+.Islands__Image--099,
+.Islands__Shadow--099 {
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+}
+@-webkit-keyframes move-island {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes move-island {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes move-shadow {
+  0% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateY(10px) scale(0.95);
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+  }
+}
+@keyframes move-shadow {
+  0% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateY(10px) scale(0.95);
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+  }
+}

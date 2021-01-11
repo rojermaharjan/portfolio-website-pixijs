@@ -1,0 +1,19 @@
+<section class="Infos" [ngClass]="{ 'appeared': appeared }" inViewport (inViewportAction)="onIntersection($event)">
+  <div class="Infos__Container">
+    <div class="Infos__Left">
+      <h3 class="Infos__Title">
+        <span attr.data-text="{{ title }}" class="Infos__TitleLine js-toSplit" *ngFor="let title of layout.title; let i = index">
+        </span>
+        <span class="Infos__TitleEmoji">{{ ' ' + layout.emoji + ' ' }}</span>
+      </h3>
+      <p class="Infos__Subtitle">{{ ' ' + layout.subtitle + ' ' }}</p>
+    </div>
+    <div class="Infos__Right">
+      <ng-container *ngFor="let para of layout.paragraphs">
+        <p class="Infos__Paragraph">
+          {{ ("\n        " + para + "\n      ") }}
+        </p>
+      </ng-container>
+    </div>
+  </div>
+</section>

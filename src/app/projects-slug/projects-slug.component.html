@@ -1,0 +1,62 @@
+<section class="Project">
+  <div class="Project__Header">
+    <a routerLink="/allprojects" class="Project__HeaderAllProjects">All Projects</a>
+  </div>
+  <div class="Project__Hero">
+    <h2 class="Project__Title" #title>
+    </h2>
+  </div>
+  <div class="Project__HeroFooter js-hideOnScroll">
+    <div class="Project__HeroFooterContainer">
+      <svg width="68" height="68" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M5.421 50.5C14.534 66.284 34.716 71.692 50.5 62.579 66.284 53.466 71.692 33.284 62.579 17.5 53.466 1.716 33.284-3.692 17.5 5.421"
+            stroke="#FCFDFF" class="circle"></path>
+          <path d="M33.5 23.5v22M29.377 41.377L33.5 45.5M37.5 41.5l-4 4" stroke="#FDFDFF" stroke-linecap="square">
+          </path>
+        </g>
+      </svg>
+      <p class="Project__HeroFooterCta"> Scroll down </p>
+    </div>
+  </div>
+  <div class="Project__Content">
+    <div class="Project__layouts" *ngIf="project.content">
+      <ng-container *ngFor="let layout of project.content.layouts">
+        <div class="Project__layout">
+          <ng-container *ngIf="'text' === layout.type">
+            <app-infos [layout]="layout"></app-infos>
+          </ng-container>
+          <ng-container *ngIf="'tripleScreens' === layout.type">
+            <!-- <app-infos></app-infos> -->
+          </ng-container>
+          <ng-container *ngIf="'fourScreens' === layout.type">
+            <!-- <app-infos></app-infos> -->
+          </ng-container>
+          <ng-container *ngIf="'cover' === layout.type">
+            <app-cover [layout]="layout"></app-cover>
+          </ng-container>
+          <ng-container *ngIf="'slider' === layout.type">
+            <app-slider [layout]="layout"></app-slider>
+          </ng-container>
+          <ng-container *ngIf="'sliderParallax' === layout.type">
+            <!-- <app-slider-parallax [layout]="layout"></app-slider-parallax> -->
+          </ng-container>
+          <ng-container *ngIf="'thanks' === layout.type">
+            <app-thanks [layout]="layout"></app-thanks>
+          </ng-container>
+          <ng-container *ngIf="'picture' === layout.type">
+            <app-picture [layout]="layout"></app-picture>
+          </ng-container>
+          <ng-container *ngIf="'video' === layout.type">
+            <!-- <app-video [layout]="layout"></app-video> -->
+          </ng-container>
+          <ng-container *ngIf="'custom' === layout.type && 'islands' === layout.name">
+            <app-islands></app-islands>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <app-next-project [currentProject$]="project$"></app-next-project>
+</section>

@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<app-mobile></app-mobile>
+<app-scroll-container class="ScrollContainer">
+  <app-header></app-header>
+  <ng-container *ngIf="showLoader">
+    <app-loader></app-loader>
+  </ng-container>
+  <app-canvas></app-canvas>
+  <router-outlet></router-outlet>
+</app-scroll-container>

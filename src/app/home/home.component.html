@@ -1,0 +1,4 @@
+<section class="Home" [ngClass]="{ 'page-leave-active page-leave-to' : isPageLeaving, 'page-enter-active page-enter-to': isPageEntering }">
+  <app-project [projects]="projects"></app-project>
+  <app-projects-footer [projects]="projects"></app-projects-footer>
+</section>

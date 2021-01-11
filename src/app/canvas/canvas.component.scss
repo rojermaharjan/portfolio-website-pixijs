@@ -1,0 +1,10 @@
+.Canvas {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+@media screen and (max-width: 950px) {
+  .Canvas {
+    display: none;
+  }
+}

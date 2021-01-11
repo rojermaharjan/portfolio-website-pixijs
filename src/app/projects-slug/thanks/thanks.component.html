@@ -1,0 +1,15 @@
+<section class="Thanks">
+  <div class="Thanks__Container">
+    <div class="Thanks__Content">
+      <h3 class="Thanks__Title">{{ ' ' + layout.title + ' ' }}</h3>
+      <ul class="Thanks__People">
+        <ng-container *ngFor="let e of layout.people; let i = index;">
+          <li class="Thanks__Person">
+            <span class="bold">{{ ' ' + e.name + ', ' }}</span>
+            <span>{{ ' ' + e.role + ' ' }}</span>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</section>

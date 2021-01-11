@@ -1,0 +1,16 @@
+<section class="ProjectsInfos u-home-container">
+  <div class="ProjectsInfos__Container" #containerRef>
+    <p class="ProjectsInfos__Number"> {{ projectNumber }} </p>
+    <h2 class="ProjectsInfos__Title"> {{ projectTitle }} </h2>
+    <p class="ProjectsInfos__Desc"> {{ projectDesc }} </p>
+    <div class="ProjectsInfos__Button">
+      <a routerLink="/projects/{{ projectSlug }}" class="">
+        <div class="Button" #buttonRef>
+          <div class="Button__Container">
+            <p class="Button__Text"><span> View case study </span></p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

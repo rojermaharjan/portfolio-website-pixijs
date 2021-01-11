@@ -1,0 +1,9 @@
+<section class="Slider">
+  <div class="Slider__Container" #containerRef>
+    <div class="Slider__Track" #trackRef>
+      <ng-container *ngFor="let t of layout.slides">
+        <img [src]="t" alt="Project image" class="Slider__Slide">
+      </ng-container>
+    </div>
+  </div>
+</section>

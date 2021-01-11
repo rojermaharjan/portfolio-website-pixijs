@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  siteInfo: {
+    name: 'Yodea Inc.',
+    aboutTitle: 'Digital marketing and application development company from Patan, Nepal.',
+    aboutDescription: 'Our company name is Yodea, we provide multiple services for the market. We’ve designed, developed applications and provided necessary services for many projects and brands. We’re currently developing an e-commerce builder.',
+  },
 };
 
 /*

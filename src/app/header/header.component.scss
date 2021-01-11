@@ -1,0 +1,109 @@
+.Header {
+  position: fixed;
+  top: 55px;
+  z-index: 50;
+  opacity: 0;
+}
+.Header.appeared {
+  -webkit-transition: 0.3s ease 1s;
+  transition: 0.3s ease 1s;
+  opacity: 1;
+}
+@media screen and (max-width: 950px) {
+  .Header {
+    display: none;
+  }
+}
+.Header.allprojects .Header__Title,
+.Header.project .Header__Title {
+  opacity: 0;
+}
+.Header.allprojects .Header__GoBack,
+.Header.project .Header__GoBack {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0.5s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease 0.5s, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease 0.5s, transform 0.3s ease;
+  transition: opacity 0.3s ease 0.5s, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.Header.about .Header__Right,
+.Header.allprojects .Header__Right,
+.Header.project .Header__Right {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.Header__Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+}
+.Header__Left {
+  position: relative;
+  width: 130px;
+}
+.Header__Title {
+  -webkit-transition: 0.3s ease 0.3s;
+  transition: 0.3s ease 0.3s;
+  color: #000;
+}
+.Header__GoBack,
+.Header__Title {
+  position: absolute;
+  width: 100%;
+  text-decoration: none;
+}
+.Header__GoBack {
+  z-index: 50;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0;
+}
+.Header__GoBack:hover {
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.Header__Right {
+  width: 179px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease 1s, -webkit-transform 0.3s ease;
+  transition: all 0.3s ease 1s, -webkit-transform 0.3s ease;
+  transition: all 0.3s ease 1s, transform 0.3s ease;
+  transition: all 0.3s ease 1s, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.Header__About,
+.Header__AllProjects {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+.Header__About:hover,
+.Header__AllProjects:hover {
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}

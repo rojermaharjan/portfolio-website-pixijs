@@ -1,0 +1,16 @@
+<section class="ProjectsFooter u-home-container" [ngClass]="{ 'appeared': appeared }">
+  <div class="ProjectsFooter__Container">
+    <div class="ProjectsFooter__Progress">
+      <div class="ProjectsFooter__ProgressSteps">
+        <p class="CurrentStep"> {{ currentProjectIndex }} </p><span> - </span>
+        <p class="MaxStep"> {{ maxProjectIndex }} </p>
+      </div>
+      <div class="ProjectsFooter__ProgressBar">
+        <div class="ProjectsFooter__ProgressBarSlide" #progressBarSlide></div>
+      </div>
+    </div>
+    <div class="ProjectsFooter__Cta">
+      <p> Scroll down </p>
+    </div>
+  </div>
+</section>

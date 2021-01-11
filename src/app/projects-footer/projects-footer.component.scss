@@ -1,0 +1,75 @@
+.ProjectsFooter {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: fixed;
+  bottom: 65px;
+  opacity: 0;
+}
+.ProjectsFooter.appeared {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.ProjectsFooter__Container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.ProjectsFooter__Progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ProjectsFooter__ProgressSteps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 43px;
+}
+.ProjectsFooter__ProgressBar {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background: #cfcfcf;
+  margin-left: 11px;
+  overflow: hidden;
+}
+.ProjectsFooter__ProgressBarSlide {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+.ProjectsFooter__Cta {
+  color: #9e9e9e;
+}
+.page-enter-active .ProjectsFooter {
+  -webkit-transition: 0.3s ease 0.5s;
+  transition: 0.3s ease 0.5s;
+}
+.page-leave-active .ProjectsFooter {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.page-enter .ProjectsFooter,
+.page-leave-active .ProjectsFooter {
+  opacity: 0;
+}

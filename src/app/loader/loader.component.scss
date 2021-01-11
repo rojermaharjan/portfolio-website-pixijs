@@ -1,0 +1,386 @@
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  background: #f5f5f5;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.Loader,
+.Loader__Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Loader__Container {
+  margin-left: -11px;
+}
+
+.Loader__Progress {
+  background: #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-right: 35px;
+}
+
+.Loader__Name {
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.Loader__Name .letter {
+  display: inline-block;
+}
+
+.Loader__Name .letter.space {
+  width: 5px;
+}
+
+.Loader__Desc {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  color: #7f7f7f;
+}
+
+.Loader__Desc .letter {
+  display: inline-block;
+}
+
+.Loader__Desc .letter.space {
+  width: 4px;
+}
+
+.Loader__Container.fade-out .Loader__Progress {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.Loader__Container.fade-out .letter {
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.Loader__Name .letter:first-child {
+  -webkit-transition-delay: 0.02s;
+  transition-delay: 0.02s;
+}
+
+.Loader__Desc .letter:first-child {
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+}
+
+.Loader__Name .letter:nth-child(2) {
+  -webkit-transition-delay: 0.04s;
+  transition-delay: 0.04s;
+}
+
+.Loader__Desc .letter:nth-child(2) {
+  -webkit-transition-delay: 0.02s;
+  transition-delay: 0.02s;
+}
+
+.Loader__Name .letter:nth-child(3) {
+  -webkit-transition-delay: 0.06s;
+  transition-delay: 0.06s;
+}
+
+.Loader__Desc .letter:nth-child(3) {
+  -webkit-transition-delay: 0.03s;
+  transition-delay: 0.03s;
+}
+
+.Loader__Name .letter:nth-child(4) {
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.Loader__Desc .letter:nth-child(4) {
+  -webkit-transition-delay: 0.04s;
+  transition-delay: 0.04s;
+}
+
+.Loader__Name .letter:nth-child(5) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.Loader__Desc .letter:nth-child(5) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.Loader__Name .letter:nth-child(6) {
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.Loader__Desc .letter:nth-child(6) {
+  -webkit-transition-delay: 0.06s;
+  transition-delay: 0.06s;
+}
+
+.Loader__Name .letter:nth-child(7) {
+  -webkit-transition-delay: 0.14s;
+  transition-delay: 0.14s;
+}
+
+.Loader__Desc .letter:nth-child(7) {
+  -webkit-transition-delay: 0.07s;
+  transition-delay: 0.07s;
+}
+
+.Loader__Name .letter:nth-child(8) {
+  -webkit-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+
+.Loader__Desc .letter:nth-child(8) {
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.Loader__Name .letter:nth-child(9) {
+  -webkit-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+
+.Loader__Desc .letter:nth-child(9) {
+  -webkit-transition-delay: 0.09s;
+  transition-delay: 0.09s;
+}
+
+.Loader__Name .letter:nth-child(10) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.Loader__Desc .letter:nth-child(10) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.Loader__Name .letter:nth-child(11) {
+  -webkit-transition-delay: 0.22s;
+  transition-delay: 0.22s;
+}
+
+.Loader__Desc .letter:nth-child(11) {
+  -webkit-transition-delay: 0.11s;
+  transition-delay: 0.11s;
+}
+
+.Loader__Name .letter:nth-child(12) {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.Loader__Desc .letter:nth-child(12) {
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.Loader__Name .letter:nth-child(13) {
+  -webkit-transition-delay: 0.26s;
+  transition-delay: 0.26s;
+}
+
+.Loader__Desc .letter:nth-child(13) {
+  -webkit-transition-delay: 0.13s;
+  transition-delay: 0.13s;
+}
+
+.Loader__Name .letter:nth-child(14) {
+  -webkit-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+
+.Loader__Desc .letter:nth-child(14) {
+  -webkit-transition-delay: 0.14s;
+  transition-delay: 0.14s;
+}
+
+.Loader__Name .letter:nth-child(15) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.Loader__Desc .letter:nth-child(15) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.Loader__Name .letter:nth-child(16) {
+  -webkit-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+
+.Loader__Desc .letter:nth-child(16) {
+  -webkit-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+
+.Loader__Name .letter:nth-child(17) {
+  -webkit-transition-delay: 0.34s;
+  transition-delay: 0.34s;
+}
+
+.Loader__Desc .letter:nth-child(17) {
+  -webkit-transition-delay: 0.17s;
+  transition-delay: 0.17s;
+}
+
+.Loader__Name .letter:nth-child(18) {
+  -webkit-transition-delay: 0.36s;
+  transition-delay: 0.36s;
+}
+
+.Loader__Desc .letter:nth-child(18) {
+  -webkit-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+
+.Loader__Name .letter:nth-child(19) {
+  -webkit-transition-delay: 0.38s;
+  transition-delay: 0.38s;
+}
+
+.Loader__Desc .letter:nth-child(19) {
+  -webkit-transition-delay: 0.19s;
+  transition-delay: 0.19s;
+}
+
+.Loader__Name .letter:nth-child(20) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.Loader__Desc .letter:nth-child(20) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.Loader__Name .letter:nth-child(21) {
+  -webkit-transition-delay: 0.42s;
+  transition-delay: 0.42s;
+}
+
+.Loader__Desc .letter:nth-child(21) {
+  -webkit-transition-delay: 0.21s;
+  transition-delay: 0.21s;
+}
+
+.Loader__Name .letter:nth-child(22) {
+  -webkit-transition-delay: 0.44s;
+  transition-delay: 0.44s;
+}
+
+.Loader__Desc .letter:nth-child(22) {
+  -webkit-transition-delay: 0.22s;
+  transition-delay: 0.22s;
+}
+
+.Loader__Name .letter:nth-child(23) {
+  -webkit-transition-delay: 0.46s;
+  transition-delay: 0.46s;
+}
+
+.Loader__Desc .letter:nth-child(23) {
+  -webkit-transition-delay: 0.23s;
+  transition-delay: 0.23s;
+}
+
+.Loader__Name .letter:nth-child(24) {
+  -webkit-transition-delay: 0.48s;
+  transition-delay: 0.48s;
+}
+
+.Loader__Desc .letter:nth-child(24) {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.Loader__Name .letter:nth-child(25) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.Loader__Desc .letter:nth-child(25) {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.Loader__Name .letter:nth-child(26) {
+  -webkit-transition-delay: 0.52s;
+  transition-delay: 0.52s;
+}
+
+.Loader__Desc .letter:nth-child(26) {
+  -webkit-transition-delay: 0.26s;
+  transition-delay: 0.26s;
+}
+
+.Loader__Name .letter:nth-child(27) {
+  -webkit-transition-delay: 0.54s;
+  transition-delay: 0.54s;
+}
+
+.Loader__Desc .letter:nth-child(27) {
+  -webkit-transition-delay: 0.27s;
+  transition-delay: 0.27s;
+}
+
+.Loader__Name .letter:nth-child(28) {
+  -webkit-transition-delay: 0.56s;
+  transition-delay: 0.56s;
+}
+
+.Loader__Desc .letter:nth-child(28) {
+  -webkit-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+
+.Loader__Name .letter:nth-child(29) {
+  -webkit-transition-delay: 0.58s;
+  transition-delay: 0.58s;
+}
+
+.Loader__Desc .letter:nth-child(29) {
+  -webkit-transition-delay: 0.29s;
+  transition-delay: 0.29s;
+}
+
+.Loader__Name .letter:nth-child(30) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}

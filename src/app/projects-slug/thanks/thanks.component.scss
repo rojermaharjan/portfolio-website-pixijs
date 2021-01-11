@@ -1,0 +1,51 @@
+.Thanks {
+  min-height: 460px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.Thanks,
+.Thanks__Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.Thanks__Container {
+  background: #191919;
+  min-height: 310px;
+  width: 90%;
+}
+.Thanks__Content {
+  margin: auto;
+  width: 70%;
+}
+.Thanks__Title {
+  font-size: 70.4px;
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.Thanks__People {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: wrap column;
+  flex-flow: column wrap;
+  max-height: 110px;
+}
+.Thanks__Person {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  color: #646464;
+  line-height: 43.2px;
+  line-height: 2.7rem;
+}
+.Thanks__Person .bold {
+  font-weight: 600;
+  color: #fff;
+}

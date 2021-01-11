@@ -1,0 +1,171 @@
+.ProjectsInfos {
+  z-index: 10;
+}
+.ProjectsInfos__Container .ProjectsInfos__Desc,
+.ProjectsInfos__Container .ProjectsInfos__Number,
+.ProjectsInfos__Container .ProjectsInfos__Title {
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: rotate(-1deg) translateY(-20px);
+  transform: rotate(-1deg) translateY(-20px);
+  opacity: 0;
+}
+.ProjectsInfos__Container .ProjectsInfos__Number {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.ProjectsInfos__Container .ProjectsInfos__Title {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+.ProjectsInfos__Container .ProjectsInfos__Desc {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Desc,
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Number,
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Title {
+  -webkit-transform: rotate(0deg) translate(0);
+  transform: rotate(0deg) translate(0);
+  opacity: 1;
+}
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Number {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Title {
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.ProjectsInfos__Container.fade-in .ProjectsInfos__Desc {
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.ProjectsInfos__Number {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+.ProjectsInfos__Title {
+  font-size: 72px;
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 96px;
+  line-height: 6rem;
+}
+.ProjectsInfos__Desc {
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  color: #9e9e9e;
+  max-width: 542px;
+  line-height: 48px;
+  line-height: 3rem;
+  margin-bottom: 74px;
+}
+.ProjectsInfos__Desc:before {
+  content: "-";
+  margin-right: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s ease 0.3s;
+  transition: opacity 0.6s ease 0.3s;
+}
+.ProjectsInfos__Button {
+  opacity: 1;
+  -webkit-transition: 0.6s ease 0.3s;
+  transition: 0.6s ease 0.3s;
+  z-index: 20;
+  position: relative;
+}
+.ProjectsInfos__Button a {
+  color: #000;
+  text-decoration: none;
+}
+.ProjectsInfos__Button.fade-out {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.page-leave-active .ProjectsInfos__Container .ProjectsInfos__Desc,
+.page-leave-active .ProjectsInfos__Container .ProjectsInfos__Number,
+.page-leave-active .ProjectsInfos__Container .ProjectsInfos__Title {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: rotate(-1deg) translateY(-20px);
+  transform: rotate(-1deg) translateY(-20px);
+  opacity: 0;
+}
+.page-leave-active .ProjectsInfos__Button {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+// Button
+.Button {
+  max-width: 250px;
+  height: 50px;
+  border: thin solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+}
+.Button__Text {
+  font-size: 24px;
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: 600;
+  width: calc(100% + 25px);
+  margin-right: -12.5px;
+}
+.Button__Text span {
+  display: inline-block;
+}
+.Button__Text:before,
+.Button__Text span {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.Button__Text:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 7px;
+  background: #000;
+  width: 14px;
+  height: 1px;
+}
+.Button:hover .Button__Text span {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.Button:hover .Button__Text:before {
+  width: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
